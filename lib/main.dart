@@ -14,14 +14,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: IntroPage(),
       routes: {
-    HomePage.id: (context) => HomePage(),
-    IntroPage.id: (context) => IntroPage(),
-    },
+        HomePage.id: (context) => HomePage(),
+        IntroPage.id: (context) => IntroPage(),
+      },
     );
   }
 }
